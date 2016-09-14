@@ -1,0 +1,40 @@
+body {
+  font: sans-serif;
+}
+
+ul {
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+  height: 640px;
+  overflow: scroll;
+  position: relative;
+  list-style: none;
+}
+
+li {
+  display: block;
+  list-style: none;
+  color: white;
+  font-size: 36px;
+  overflow: hidden;
+  opacity: 1;
+  max-height: 999px;
+  transition: max-height .5s cubic-bezier(0.22, 0.61, 0.36, 1); // ease-out quadratic
+
+  // padding: 40px;
+  // -webkit-box-sizing: border-box !important;
+  // box-sizing: border-box;
+}
+
+li:nth-child(odd) {
+  background-color: #69D1C5;
+}
+
+li:nth-child(even) {
+  background-color: #3A7CA5;
+}
+
+.hidden {
+  max-height: 0px;
+}
